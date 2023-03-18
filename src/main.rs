@@ -12,10 +12,7 @@ fn main() {
 
 fn writeTDB(path: &str, data: &[u8]) -> std::io::Result<()> {
     let mut fileWrite = File::create(path)?;
-    for mess in data.iter() {
-        fileWrite.write(mess)?;
-    }
-    //fileWrite.write_all(data)?;
+    fileWrite.write(data)?;
 
     Ok(())
 }
