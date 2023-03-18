@@ -2,7 +2,7 @@ mod disk_interaction;
 
 fn main() {
     let message = "Hello world!".as_bytes();
-    let path = String::from("database/test.tdb");
+    let path = String::from("databases/test.tdb");
 
     
     disk_interaction::write_tdb(&path, message);
