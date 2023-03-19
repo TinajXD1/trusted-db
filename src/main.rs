@@ -1,7 +1,7 @@
 mod disk_interaction;
 
 fn main() {
-    let message = "Hello world!".as_bytes();
+    let message = "It doesn't work!".as_bytes();
     let path = String::from("databases/test.tdb");
 
     
