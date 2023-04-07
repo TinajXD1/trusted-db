@@ -10,9 +10,8 @@ pub fn create_tdb(path: &str) -> std::io::Result<()> {
 
 pub fn create_column(path: &str, column: &str) -> std::io::Result<()> {
     let path_to_column = String::from("") + path + "/" + column + ".col";
-    println!("Column: {}", &path_to_column);
-    let mut file_create = File::create(&path)?;
-    file_create.write_all("Start".as_bytes())?;
+    let mut file_create = File::create(&path_to_column)?;
+    file_create.write_all("".as_bytes())?;
 
     Ok(())
 }
