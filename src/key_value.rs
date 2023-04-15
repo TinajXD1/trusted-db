@@ -1,24 +1,16 @@
 use std::collections::HashMap;
 
-pub fn new_list()(
-    let mut list = HashMap::new();
+pub fn new_list() -> HashMap<&str, &[u8]>{
+    let list = HashMap::new();
 
-    return list
-)
-
-pub fn insert_value(list_name: &str, key: &str, value: &[u8]){
-    list_name.insert
+    return list;
 }
 
-pub fn get_value(key: &str) -> &[u8]{
-
+pub fn insert_value(mut list_name: HashMap<&str, &[u8]>, key: &str, value: &[u8]){
+    list_name.insert(key, value);
 }
 
-list.insert(blue, 10);
-    list.insert(red, 50);
-
-    let mut team_name = String::from("blue");
-    let team_score = scores.get(&team_name);
-    println!("{:?}", &team_score);
-
-    println!();
+pub fn get_value(mut list_name: HashMap<&str, &[u8]>, key: &str) -> &[u8]{
+    let value = list_name.get(key);
+    return String::from(value).as_bytes();
+}
