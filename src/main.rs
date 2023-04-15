@@ -1,7 +1,7 @@
-mod 
+mod key_value;
 mod disk_interaction;
 
 fn main() {
-    let message = "It doesn't work!".as_bytes();
-
+    let blue = String::from("blue");
+    let red = String::from("red");
 }
