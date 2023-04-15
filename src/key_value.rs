@@ -1,13 +1,13 @@
 use std::collections::HashMap;
 
-pub fn new_list(list_name: &str)(
+pub fn new_list()(
     let mut list = HashMap::new();
 
-    
+    return list
 )
 
 pub fn insert_value(list_name: &str, key: &str, value: &[u8]){
-
+    list_name.insert
 }
 
 pub fn get_value(key: &str) -> &[u8]{
